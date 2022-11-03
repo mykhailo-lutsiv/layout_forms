@@ -8,5 +8,106 @@
     <script src="./scripts/main.js"></script>
   </head>
   <body>
+    <form action="GET">
+      <fieldset>
+        <legend>Personal</legend>
+        
+        <label>
+          Username*:
+          <input type="text" placeholder="Example" required>
+        </label>
+
+        <br>
+        <br>
+
+        <label>
+          Password*:
+          <input type="password" placeholder="Example" required>
+        </label>
+        
+        <br>
+        <br>
+
+        <label>
+          Email*:
+          <input type="email" placeholder="example@email.com" required>
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Something about you</legend>
+        
+        <label>
+          Choose color:
+          <input type="color">
+        </label>
+
+        <br>
+        <br>
+
+        Do you like dogs?:
+        <br>
+        <label>
+          Yes
+          <input type="radio" name="yes">
+        </label>
+        <label>
+          No
+          <input type="radio" name="yes">
+        </label>
+        
+        <br>
+        <br>
+
+        <label>
+          Pick a date:
+          <input type="date">
+        </label>
+        
+        <br>
+        <br>
+
+        Rate "Fight Club":
+        <br>
+
+        1
+        <input type="range" step="1" min="1" max="10">
+
+        10
+      </fieldset>
+
+      <fieldset>
+        <legend>Terms and Conditions</legend>
+        
+        <label>
+          Your age*:
+          <input type="number" required min="18" max="100" value="18">
+        </label>
+
+        <br>
+        <br>
+
+        <label>
+          Do you agree with all terms and conditions?:
+          <input type="checkbox" required>
+        </label>
+        
+        <br>
+        <br>
+
+        <label>
+          Type something:
+          <br>
+          <textarea cols="20" rows="5" maxlength="80"></textarea>
+        </label>
+
+      </fieldset>
+      
+      <br>
+      <br>
+      
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
